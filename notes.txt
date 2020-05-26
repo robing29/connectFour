@@ -4,3 +4,6 @@ Ressources:
 
 Building multiplayer game with Javascript
 https://www.youtube.com/watch?v=xVcVbCLmKew
+part2: https://www.youtube.com/watch?v=XTWsnRcM-Z4
+part3: https://www.youtube.com/watch?v=nQC7VEIyQPI
+part4: https://www.youtube.com/watch?v=oYIZDgZH4e8
