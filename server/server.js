@@ -13,8 +13,6 @@ const server = http.createServer(app);
 
 const io = socketio(server);
 
-
-
 server.on('error', (err) => {
     console.error('Server error:', err);
 });

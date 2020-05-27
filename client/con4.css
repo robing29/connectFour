@@ -1,0 +1,20 @@
+body {
+  background-color: rgba(240, 232, 232, 0.445);
+}
+
+.table-wrapper {
+  min-width: 600px;
+  width: 100%;
+}
+
+.tablespielfeld {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tablespielfeld td {
+  border: 1px solid black;
+  line-height: 10vh;
+}
+/*# sourceMappingURL=con4.css.map */

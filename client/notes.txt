@@ -1,3 +1,7 @@
+playerColour1: purple;
+playerColour2: orange; (Splatoon)
+
+highlight last insertion (Background-color changed)
 
 
 Ressources:
