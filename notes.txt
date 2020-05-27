@@ -1,4 +1,4 @@
-
+Server starten: npm init -y
 
 Ressources:
 
