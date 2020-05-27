@@ -4,13 +4,13 @@ body {
 
 .table-wrapper {
   min-width: 600px;
-  width: 100%;
 }
 
 .tablespielfeld {
   table-layout: fixed;
   border-collapse: collapse;
   width: 100%;
+  min-height: 400px;
 }
 
 .tablespielfeld td {

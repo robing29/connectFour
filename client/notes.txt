@@ -3,6 +3,17 @@ playerColour2: orange; (Splatoon)
 
 highlight last insertion (Background-color changed)
 
+Next steps:
+1. 
+
+
+
+
+
+
+
+
+
 
 Ressources:
 
