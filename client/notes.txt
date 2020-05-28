@@ -2,9 +2,11 @@ playerColour1: purple;
 playerColour2: orange; (Splatoon)
 
 highlight last insertion (Background-color changed)
+HTML <col> Tag -> To make the columns more readable
 
 Next steps:
-1. 
+1. Add basic css
+2. 
 
 
 

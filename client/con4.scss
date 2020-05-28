@@ -4,17 +4,35 @@ body{
 background-color: $bgcolor;
 }
 .table-wrapper{
-    min-width: 600px;
 }
 
 .tablespielfeld{
-    table-layout: fixed;
+    display: table;
+    width: 100%;
+/*     table-layout: fixed;
     border-collapse: collapse;
     width: 100%;
-    min-height: 400px;
+    min-height: 400px; */
 
-    td {
+/*     td {
         border: 1px solid black;
         line-height: 10vh;
-    }
+    } */
+}
+
+@mixin tablerows {
+    display: table-row;
+}
+@mixin tablecells {
+    display: table-cell;
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid black;
+}
+.tceven, .tcodd{
+    @include tablecells;
+}
+
+.t1, .t2, .t3, .t4, .t5, .t6, .t7 {
+    @include tablerows;
 }

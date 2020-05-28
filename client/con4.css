@@ -2,19 +2,27 @@ body {
   background-color: rgba(240, 232, 232, 0.445);
 }
 
-.table-wrapper {
-  min-width: 600px;
-}
-
 .tablespielfeld {
-  table-layout: fixed;
-  border-collapse: collapse;
+  display: table;
   width: 100%;
-  min-height: 400px;
+  /*     table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    min-height: 400px; */
+  /*     td {
+        border: 1px solid black;
+        line-height: 10vh;
+    } */
 }
 
-.tablespielfeld td {
+.tceven, .tcodd {
+  display: table-cell;
+  width: 10vh;
+  height: 10vh;
   border: 1px solid black;
-  line-height: 10vh;
+}
+
+.t1, .t2, .t3, .t4, .t5, .t6, .t7 {
+  display: table-row;
 }
 /*# sourceMappingURL=con4.css.map */
