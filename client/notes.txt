@@ -5,9 +5,13 @@ highlight last insertion (Background-color changed)
 HTML <col> Tag -> To make the columns more readable
 
 Next steps:
-1. Add basic css
-2. 
+1. change appearance of table
+2. add "gerüst" des games
 
+Späterer Effekt, dass Kreise in der obersten Reihe bereits angezeigt werden:
+1. 2 Klassen haben, deren hover-effekte die beiden Farben sind
+2. Nach dem hinzufügen zwischen den Klassen togglen
+3. Repeating keyframe-Animation bei hover?
 
 
 
@@ -18,6 +22,8 @@ Next steps:
 
 
 Ressources:
+
+div-table https://css-tricks.com/complete-guide-table-element/#article-header-id-10
 
 Building multiplayer game with Javascript
 https://www.youtube.com/watch?v=xVcVbCLmKew

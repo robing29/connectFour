@@ -1,23 +1,14 @@
 $bgcolor: rgba(240, 232, 232, 0.445);
+$con4blue: #1a79f5;
 
-body{
-background-color: $bgcolor;
+body {
+    background-color: $bgcolor;
 }
-.table-wrapper{
-}
-
 .tablespielfeld{
     display: table;
-    width: 100%;
-/*     table-layout: fixed;
-    border-collapse: collapse;
-    width: 100%;
-    min-height: 400px; */
-
-/*     td {
-        border: 1px solid black;
-        line-height: 10vh;
-    } */
+    min-width: 77vh;
+    min-height: 77vh;
+    background-color: $bgcolor;
 }
 
 @mixin tablerows {
@@ -25,14 +16,51 @@ background-color: $bgcolor;
 }
 @mixin tablecells {
     display: table-cell;
-    width: 10vh;
-    height: 10vh;
-    border: 1px solid black;
+    width: 11vh;
+    height: 11vh;
+    border-right: 1px solid black;
+    background-color: $con4blue;
+    // border: solid thin rgba($color: #000000, $alpha: 0.2);
+}
+
+@mixin whitecircle{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before, &::after{
+        position: absolute;
+        align-self: center;
+        content: '';
+        background-color: white;
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px 2px black inset;
+    }
 }
 .tceven, .tcodd{
     @include tablecells;
 }
+.tchead {
+    display: table-cell;
+    width: 11vh;
+    height: 11vh;
+    border-right: 1px dotted black;
+    border-bottom: 2px double black;
+}
 
-.t1, .t2, .t3, .t4, .t5, .t6, .t7 {
+.whitecircle{
+    @include whitecircle;
+}
+
+.tr0, .tr1, .tr2, .tr3, .tr4, .tr5, .tr6, .tr7 {
     @include tablerows;
 }
