@@ -10,6 +10,13 @@ Next steps:
 1. lock colors once created
 2. 
 
+Ideen wie man col checken kann:
+for-loop
+if(spielFeld[i][0].full == full){
+    doNothing
+    } else {
+        changeClass
+    }
 
 
 
