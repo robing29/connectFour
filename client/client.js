@@ -19,56 +19,15 @@ createArray();
 console.log(spielFeld);
 console.log(topRow);
 
-function createMethod(){
+createCol(spielFeld){
     for (let i = 0; i < spielFeld.length; i++){
         for (let k = 0; k < spielFeld[i].length; k++){
-            doEverything(spielFeld[i][k]);
-            // createCol(spielFeld[i][0]);
-            /* spielFeld[i][k].full = 0;
-            spielFeld[i][k].cc = spielFeld[i][k].addEventListener('click', () => changeClass(spielFeld[i][k])); */
-        }
-    }
-}
-createMethod();
-
-
-function doEverything(arrPos){
-    //sets the property "full" of the div-element to false
-    createHitProperty = (arrPos) => {
-        arrPos.full = false;
-        console.log(arrPos.full);
-    }
-    
-    createHitProperty(arrPos);
-    
-    
-    //From here on: Onclick functions
-    createOnClick = (arrPos) => {
-        arrPos.addEventListener('click', () => changeClass(arrPos));
-        arrPos.addEventListener('click', () => setHitProperty(arrPos));
-    }
-    
-    //If clicked, property of div is set to "full"
-    setHitProperty = (arrPos) => {
-        arrPos.full = true;
-        console.log(arrPos.full);
-    }
-    
-    changeClass = (arrPos) => {
-        if(arrPos.full == false){
-            if(player == 1){
-                arrPos.classList.add("player1");
-                arrPos.classList.remove("player2");
+            if (spielFeld[k][i].full == true){
+                //do Nothing
             } else {
-                arrPos.classList.add("player2");
-                arrPos.classList.remove("player1");
+                
             }
         }
     }
-        createOnClick(arrPos);
-    }
-    
-    
-    // createEventListener();
-    /* spielFeld[0][1].classList.add("player1");
-    spielFeld[0][0].classList.add("player2"); */
+}
+
