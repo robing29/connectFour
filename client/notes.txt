@@ -5,13 +5,28 @@ highlight last insertion (Background-color changed)
 HTML <col> Tag -> To make the columns more readable
 
 Next steps:
-1. change appearance of table
-2. add "gerüst" des games
+1. create onclick effects
+2. 
+1. lock colors once created
+2. 
+
+
+
 
 Späterer Effekt, dass Kreise in der obersten Reihe bereits angezeigt werden:
 1. 2 Klassen haben, deren hover-effekte die beiden Farben sind
 2. Nach dem hinzufügen zwischen den Klassen togglen
 3. Repeating keyframe-Animation bei hover?
+
+FallDown-Animation:
+-> Trigger class-toggles row by row via javascript in a defined time window
+
+Was muss drin sein?
+-> Hover Animation oberste Reihe
+-> evtl. FallDown Animation
+-> highlighten des letzten gesetzten Steins, dehighlighten bei neuem Stein
+-> cannot change fields
+
 
 
 

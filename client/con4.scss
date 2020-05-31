@@ -1,5 +1,7 @@
 $bgcolor: rgba(240, 232, 232, 0.445);
 $con4blue: #1a79f5;
+$player1: rgb(190, 24, 255);
+$player2: #EEAA05;
 
 body {
     background-color: $bgcolor;
@@ -46,6 +48,54 @@ body {
         box-shadow: 1px 1px 5px 2px black inset;
     }
 }
+@mixin player1{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before, &::after{
+        position: absolute;
+        align-self: center;
+        content: '';
+        background-color: $player1;
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px 2px black inset;
+    }
+}
+
+@mixin player2{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before, &::after{
+        position: absolute;
+        align-self: center;
+        content: '';
+        background-color: $player2;
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px 2px black inset;
+    }
+}
+
 .tceven, .tcodd{
     @include tablecells;
 }
@@ -59,6 +109,13 @@ body {
 
 .whitecircle{
     @include whitecircle;
+}
+
+.player1{
+    @include player1();
+}
+.player2{
+    @include player2();
 }
 
 .tr0, .tr1, .tr2, .tr3, .tr4, .tr5, .tr6, .tr7 {
